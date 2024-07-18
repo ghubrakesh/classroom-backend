@@ -9,7 +9,7 @@ build:
 # Run the Flask application
 run:
 	docker-compose up -d
-	docker-compose exec web bash
+	docker-compose run -it web
 
 # Run the tests
 test:
