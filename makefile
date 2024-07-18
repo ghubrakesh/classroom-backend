@@ -8,8 +8,11 @@ build:
 
 # Run the Flask application
 run:
-	docker-compose up -d
-	docker-compose run -it web
+	docker-compose up
+
+# Stop the application if not stopped properly while exiting.
+stop:
+	docker-compose down
 
 # Run the tests
 test:
